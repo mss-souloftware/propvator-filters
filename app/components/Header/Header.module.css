@@ -1,0 +1,7 @@
+.header {
+    border:1px solid #5C64DC;
+    background: rgb(125, 227, 250);
+    background: linear-gradient(180deg, rgba(125, 227, 250, 0.5) 16%, rgba(89, 146, 252, 0.5) 44%, rgba(51, 59, 255, 0.5) 74%);
+    /* background: url('../../../public/Images/Global/header.jpg') no-repeat center;
+    background-size: cover; */
+}

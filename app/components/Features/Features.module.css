@@ -1,0 +1,63 @@
+.platforms {
+    margin-top: 80px;
+    padding: 30px;
+    border-radius: 8px;
+   background: transparent;
+}
+
+.platforms h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.platforms select {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #9C98BE;
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.platforms select:focus{
+    outline: none;
+}
+
+.instrument option {
+    color: black;
+}
+
+.selectpaddingleft{
+    padding-left: 45px !important;
+   
+    background: url('/Images/Global/select-icon.svg') no-repeat right transparent !important;
+    -webkit-appearance: none;
+    background-position-x: 98% !important;
+
+}
+
+.selecticon{
+    position: relative;
+}
+
+.selecticonimg{
+    position: absolute;
+    top: 18px;
+    left: 15px;
+}
+
+.input{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #9C98BE;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.input::placeholder{
+    color: white;
+   
+}

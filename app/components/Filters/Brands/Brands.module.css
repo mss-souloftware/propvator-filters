@@ -1,0 +1,17 @@
+.brandBox {
+    margin-top: 80px;
+}
+
+.moreFilters{
+    border:1px solid #7DE3F9;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.moreFilters img{
+    margin-right: 10px;
+}

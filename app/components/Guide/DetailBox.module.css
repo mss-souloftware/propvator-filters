@@ -1,0 +1,51 @@
+.DetailBox {
+    color: #fff;
+    position: relative;
+    width: calc(33.33% - 20px);
+    border: 1px solid #272D8C;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+
+.BoxIcon {
+    position: absolute;
+    content: "";
+    top: -40px;
+    right: -20px;
+
+}
+
+.DetailBox h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.DetailBox p {
+    font-size: 14px;
+}
+
+@media(max-width:991px) {
+    .BoxIcon {
+        top: -20px;
+        right: -20px;
+    }
+}
+
+@media(max-width:768px) {
+    .DetailBox {
+        width: calc(50% - 20px);
+        margin-top: 30px;
+    }
+
+    .BoxIcon {
+        top: -20px;
+        right: 0px;
+    }
+}
+
+@media(max-width:600px) {
+    .DetailBox {
+        width: 100%;
+    }
+}

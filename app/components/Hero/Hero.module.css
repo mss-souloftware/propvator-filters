@@ -1,0 +1,39 @@
+.heroSection {
+    padding: 300px 0 450px;
+    background: url('../../../public/Images/heroBg.png') no-repeat top;
+    background-size: cover;
+}
+
+.titleBg {
+    line-height: 1.2;
+}
+
+.titleBg span {
+    position: relative;
+    z-index: 1;
+}
+
+.titleBg span::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 10px);
+    height: calc(100% + 5px);
+    background: rgb(125, 227, 250);
+    background: linear-gradient(180deg, rgba(125, 227, 250, 0.5) 16%, rgba(89, 146, 252, 0.5) 44%, rgba(51, 59, 255, 0.5) 74%);
+    top: 5px;
+    left: -5px;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+@media(max-width:991px) {
+    .heroSection {
+        padding: 200px 0 100px;
+    }
+}
+
+@media(max-width:768px) {
+    .heroSection {
+        padding: 200px 12px 100px;
+    }
+}

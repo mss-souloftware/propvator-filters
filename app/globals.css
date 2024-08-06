@@ -1,0 +1,398 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #1A1A1A;
+}
+
+/* the slides */
+.slick-slide {
+  margin-left: 60px;
+}
+
+/* the parent */
+.slick-list {
+  margin-left: -60px;
+}
+
+.data--table {
+  overflow: auto;
+}
+
+.data--table::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+.data--table::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.data--table::-webkit-scrollbar-thumb {
+  background: #333BFF;
+}
+
+/* Handle on hover */
+.data--table::-webkit-scrollbar-thumb:hover {
+  background: #333BFF;
+}
+
+.comparison--table--area {
+  margin: 50px 0;
+}
+
+.comparison--table--area .table--wrapper * {
+  color: #fff;
+}
+
+.comparison--table--area .table--wrapper {
+  padding: 0s;
+  width: 100%;
+}
+
+.comparison--table--area .table--wrapper h5 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21.12px;
+  letter-spacing: -0.32px;
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.comparison--table--area .table--wrapper h5 span {
+  color: #4432fc;
+}
+
+.comparison--table--area table tr {
+  position: relative;
+}
+
+.comparison--table--area table tbody tr td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #212121;
+  z-index: 2;
+}
+
+.comparison--table--area table tbody tr:nth-child(odd) td:first-child {
+  background-color: #1a1a1a;
+}
+
+.comparison--table--area table tbody tr td:last-child,
+.comparison--table--area table th:last-child {
+  position: sticky;
+  right: 0;
+}
+
+.comparison--table--area table th:first-child {
+  position: sticky;
+}
+
+.comparison--table--area table th:last-child,
+.comparison--table--area table th:first-child {
+  background-color: #212121;
+  z-index: 2;
+}
+
+.comparison--table--area table th:first-child {
+  position: sticky;
+  left: 0;
+}
+
+.comparison--table--area table th,
+.comparison--table--area table td {
+  text-align: center;
+  min-width: 100px;
+  padding: 10px;
+  height: 106px;
+  vertical-align: middle;
+  position: relative;
+  border: 1px solid #24253D;
+}
+
+.comparison--table--area table td svg {
+  margin: auto;
+}
+
+.copy--data {
+  cursor: pointer;
+}
+
+.comparison--table--area table th {
+  padding-top: 0;
+}
+
+.comparison--table--area table th p,
+.comparison--table--area table td p {
+  font-size: 12.8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18.48px;
+  letter-spacing: -0.28px;
+}
+
+.comparison--table--area table th svg {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 14px;
+  width: 14px;
+  cursor: pointer;
+}
+
+.comparison--table--area table thead {
+  background-color: #212121;
+}
+
+.comparison--table--area table thead th p {
+  text-transform: uppercase;
+}
+
+.comparison--table--area table th .column-minus,
+.comparison--table--area table .copy--clip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(133deg, #7de3fa 17.44%, #333bff 75.23%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 0px 0px 0px 12px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.comparison--table--area table th .column-minus span {
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.comparison--table--area table th:hover .column-minus {
+  opacity: 1;
+  visibility: visible;
+}
+
+.comparison--table--area table td .company img {
+  width: 62px;
+  height: 66px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.comparison--table--area table td .company p {
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.comparison--table--area table td del {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.comparison--table--area table .copy--clip svg {
+  width: 16px;
+  height: 16px;
+}
+
+.comparison--table--area table .copy--data:hover .copy--clip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.comparison--table--area table .country p {
+  font-size: 12px;
+  font-weight: 400;
+  width: 56px;
+  margin: 0 auto;
+}
+
+.comparison--table--area table .country span {
+  font-size: 10px;
+  font-weight: 400;
+  display: block;
+}
+
+.comparison--table--area table .country img {
+  width: 33px;
+  height: 19px;
+}
+
+.comparison--table--area table .cart {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(133deg, #7de3fa 17.44%, #333bff 75.23%);
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.comparison--table--area table .cart svg {
+  width: 24px;
+  height: 24px;
+}
+
+.comparison--table--area table tbody tr:nth-child(even) {
+  background-color: #212121;
+}
+
+.comparison--table--area .table--inner {
+  position: relative;
+  z-index: 1;
+}
+
+.comparison--table--area .table--inner:before {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  width: 98px;
+  height: 100%;
+  background: -o-linear-gradient(right,
+      rgba(3, 59, 255, 0.75) -25.35%,
+      rgba(115, 115, 115, 0) 69.97%);
+  background: -webkit-gradient(linear,
+      right top,
+      left top,
+      color-stop(-25.35%, rgba(3, 59, 255, 0.75)),
+      color-stop(69.97%, rgba(115, 115, 115, 0)));
+  background: linear-gradient(270deg,
+      rgba(3, 59, 255, 0.75) -25.35%,
+      rgba(115, 115, 115, 0) 69.97%);
+  z-index: 0;
+}
+
+.comparison--table--area .buttons a {
+  display: inline-block;
+  padding: 8px 36px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26.24px;
+  color: #fff;
+  border-radius: 2px;
+  border: 0.8px solid #d1d1d1;
+  margin-top: 48px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.comparison--table--area .buttons a:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #4432fc;
+}
+
+/* guide--area styles  */
+.guide--area {
+  padding: 170px 0 58px;
+  overflow: hidden;
+}
+
+.guide--area .row {
+  margin-right: -24px;
+  margin-left: -24px;
+}
+
+.guide--area .row [class*="col-"] {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.guide--area h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 52.8px;
+  letter-spacing: -0.8px;
+  width: 768px;
+}
+
+.guide--box {
+  padding: 8px 16px 73px;
+  border-radius: 10px;
+  background-color: #202020;
+  text-align: center;
+  height: 100%;
+}
+
+.guide--box svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.guide--box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.68px;
+  letter-spacing: -0.48px;
+  margin-bottom: 24px;
+}
+
+.guide--box p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26.24px;
+}
+
+@media(max-width:991px) {
+
+  /* the slides */
+  .slick-slide {
+    margin-left: 30px;
+  }
+
+  /* the parent */
+  .slick-list {
+    margin-left: -30px;
+  }
+
+}
+
+
+@media(max-width:991px) {
+
+  /* the slides */
+  .slick-slide {
+    margin-left: 20px;
+  }
+
+  /* the parent */
+  .slick-list {
+    margin-left: -20px;
+  }
+
+}

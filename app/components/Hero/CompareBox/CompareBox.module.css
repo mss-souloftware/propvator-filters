@@ -1,0 +1,51 @@
+.compareBox {
+    max-width: 900px;
+    margin: auto;
+    border: 1px solid #5C96CF;
+    padding: 30px;
+    background: rgb(125, 227, 250);
+    background: linear-gradient(180deg, rgba(125, 227, 250, 0.1) 16%, rgba(89, 146, 252, 0.1) 44%, rgba(51, 59, 255, 0.1) 74%);
+    border-radius: 8px;
+    margin-top: 80px;
+}
+
+.compareBox h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.compareBox p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.compareBox .slectionWrapper {
+    margin-bottom: 30px;
+}
+
+.searchBtn {
+    border: 1px solid #5C96CF;
+    background: linear-gradient(90deg, rgba(125, 227, 250, 1) 16%, rgba(89, 146, 252, 1) 44%, rgba(51, 59, 255, 1) 74%);
+    padding: 8px 30px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+@media(max-width:768px) {
+    .compareBox {
+        margin-top: 30px;
+    }
+
+    .compareBox h2 {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .compareBox p {
+        font-size: 16px;
+    }
+}

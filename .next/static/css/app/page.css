@@ -1,0 +1,808 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Header/Accounts.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.Accounts_accounts__FRHsQ {
+    display: flex;
+    margin-right: 10px;
+}
+
+.Accounts_accounts__FRHsQ a {
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+.Accounts_accounts__FRHsQ a:first-child {
+    border: 2px solid #9BA4EC;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.Accounts_accounts__FRHsQ a:last-child {
+    background: #fff;
+    color: #2218C3;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Header/Header.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.Header_header__hrF4W {
+    border:1px solid #5C64DC;
+    background: rgb(125, 227, 250);
+    background: linear-gradient(180deg, rgba(125, 227, 250, 0.5) 16%, rgba(89, 146, 252, 0.5) 44%, rgba(51, 59, 255, 0.5) 74%);
+    /* background: url('../../../public/Images/Global/header.jpg') no-repeat center;
+    background-size: cover; */
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Hero/Hero.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.Hero_heroSection__hn6R0 {
+    padding: 300px 0 450px;
+    background: url(/_next/static/media/heroBg.51e5fb39.png) no-repeat top;
+    background-size: cover;
+}
+
+.Hero_titleBg__87C_b {
+    line-height: 1.2;
+}
+
+.Hero_titleBg__87C_b span {
+    position: relative;
+    z-index: 1;
+}
+
+.Hero_titleBg__87C_b span::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 10px);
+    height: calc(100% + 5px);
+    background: rgb(125, 227, 250);
+    background: linear-gradient(180deg, rgba(125, 227, 250, 0.5) 16%, rgba(89, 146, 252, 0.5) 44%, rgba(51, 59, 255, 0.5) 74%);
+    top: 5px;
+    left: -5px;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+@media(max-width:991px) {
+    .Hero_heroSection__hn6R0 {
+        padding: 200px 0 100px;
+    }
+}
+
+@media(max-width:768px) {
+    .Hero_heroSection__hn6R0 {
+        padding: 200px 12px 100px;
+    }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Hero/CompareBox/CompareBox.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+.CompareBox_compareBox__Fob4q {
+    max-width: 900px;
+    margin: auto;
+    border: 1px solid #5C96CF;
+    padding: 30px;
+    background: rgb(125, 227, 250);
+    background: linear-gradient(180deg, rgba(125, 227, 250, 0.1) 16%, rgba(89, 146, 252, 0.1) 44%, rgba(51, 59, 255, 0.1) 74%);
+    border-radius: 8px;
+    margin-top: 80px;
+}
+
+.CompareBox_compareBox__Fob4q h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.CompareBox_compareBox__Fob4q p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.CompareBox_compareBox__Fob4q .CompareBox_slectionWrapper__h61Ib {
+    margin-bottom: 30px;
+}
+
+.CompareBox_searchBtn__CPAyp {
+    border: 1px solid #5C96CF;
+    background: linear-gradient(90deg, rgba(125, 227, 250, 1) 16%, rgba(89, 146, 252, 1) 44%, rgba(51, 59, 255, 1) 74%);
+    padding: 8px 30px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+@media(max-width:768px) {
+    .CompareBox_compareBox__Fob4q {
+        margin-top: 30px;
+    }
+
+    .CompareBox_compareBox__Fob4q h2 {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .CompareBox_compareBox__Fob4q p {
+        font-size: 16px;
+    }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Filters/Brands/Brands.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.Brands_brandBox__rNnj7 {
+    margin-top: 80px;
+}
+
+.Brands_moreFilters__1wpZk{
+    border:1px solid #7DE3F9;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.Brands_moreFilters__1wpZk img{
+    margin-right: 10px;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Filters/Brands/BrandSelector.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************/
+.BrandSelector_brnadSelector__zEssd {
+    width: 100px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 5px;
+}
+
+.BrandSelector_brnadSelector__zEssd img{
+    margin: auto;
+}
+
+.BrandSelector_brnadSelector__zEssd span {
+    font-size: 12px;
+    color: #fff;
+    line-height: 1;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Guide/Guide.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.Guide_Guideheading__yARqI {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    line-height: 52px;
+    font-size: 40px;
+}
+
+@media(max-width:991px) {
+    .Guide_Guideheading__yARqI {
+        line-height: 1;
+        font-size: 30px;
+    }
+}
+
+@media(max-width:768px) {
+    .Guide_Guideheading__yARqI {
+        line-height: 1;
+        font-size: 20px;
+    }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Guide/DetailBox.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.DetailBox_DetailBox__HT_Zn {
+    color: #fff;
+    position: relative;
+    width: calc(33.33% - 20px);
+    border: 1px solid #272D8C;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+
+.DetailBox_BoxIcon__x4oeM {
+    position: absolute;
+    content: "";
+    top: -40px;
+    right: -20px;
+
+}
+
+.DetailBox_DetailBox__HT_Zn h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.DetailBox_DetailBox__HT_Zn p {
+    font-size: 14px;
+}
+
+@media(max-width:991px) {
+    .DetailBox_BoxIcon__x4oeM {
+        top: -20px;
+        right: -20px;
+    }
+}
+
+@media(max-width:768px) {
+    .DetailBox_DetailBox__HT_Zn {
+        width: calc(50% - 20px);
+        margin-top: 30px;
+    }
+
+    .DetailBox_BoxIcon__x4oeM {
+        top: -20px;
+        right: 0px;
+    }
+}
+
+@media(max-width:600px) {
+    .DetailBox_DetailBox__HT_Zn {
+        width: 100%;
+    }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/AdvanceFilter/Advance.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.Advance_filterMain__ZKNJU {
+    margin-top: -350px;
+}
+
+
+@media(max-width:991px) {
+    .Advance_filterMain__ZKNJU {
+        margin-top: 0px;
+        padding: 0 12px;
+    }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/AdvanceFilter/RangeBox.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+.RangeBox_RangeBox__ywztI label {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.RangeBox_RangeBox__ywztI input {
+    background: #252656;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.RangeBox_RangeBox__ywztI input:focus{
+    outline: none;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/AdvanceFilter/RangWrapper.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+.RangWrapper_RangWrapper__1o0iA {
+    position: relative;
+    width: calc(25% - 20px);
+    color: #fff;
+    padding: 20px;
+    border: 1px solid #333BFF;
+    background: #202020;
+    border-radius: 20px;
+}
+
+.RangWrapper_Pill__UBH7v {
+    position: absolute;
+    content: "";
+    background: #333BFF;
+    color: #fff;
+    top: -10px;
+    right: 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 3px 15px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+
+@media(max-width:991px) {
+    .RangWrapper_RangWrapper__1o0iA {
+        width: calc(50% - 20px);
+    }
+}
+
+@media(max-width:600px) {
+    .RangWrapper_RangWrapper__1o0iA {
+        width: 100%;
+    }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Footer/Footer.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_gradientHDNG__qzgJT {
+    background: linear-gradient(135deg, #7DE3FA 16%, #333BFF 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #333BFF;
+    margin-bottom: 20px;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Newsletter/Newsletter.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.Newsletter_newsletterWrapper__gyoCd {
+    margin-top: 50px;
+    padding: 50px 30px;
+    border-radius: 8px;
+    background: rgb(125, 227, 250);
+    background: linear-gradient(180deg, #333aff27 16%, #333aff1d 44%, #333aff0b 74%);
+}
+
+.Newsletter_Newsheading__b2Pyz {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    line-height: 52px;
+    font-size: 40px;
+}
+
+.Newsletter_newsletterWrapper__gyoCd input {
+    background: #212460;
+    color: #fff;
+    padding: 15px;
+    width: 85%;
+    border-radius: 50px;
+}
+
+.Newsletter_newsletterWrapper__gyoCd input:focus {
+    outline: none;
+}
+
+.Newsletter_newsletterWrapper__gyoCd input::placeholder {
+    color: #fff;
+}
+
+.Newsletter_newsletterWrapper__gyoCd button {
+    width: 15%;
+    background: linear-gradient(180deg, rgb(125, 227, 250) 16%, rgb(89, 146, 252) 44%, rgb(51, 59, 255) 74%);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+    margin-left: -30px;
+}
+
+@media(max-width:1024px) {
+    .Newsletter_newsletterWrapper__gyoCd input {
+        width: 70%;
+    }
+
+    .Newsletter_newsletterWrapper__gyoCd button {
+        width: 30%;
+    }
+}
+
+@media(max-width:600px) {
+    .Newsletter_newsletterWrapper__gyoCd input {
+        width: 100%;
+    }
+
+    .Newsletter_newsletterWrapper__gyoCd button {
+        width: 100%;
+        margin-left: -0px;
+        margin-top: 15px;
+    }
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./node_modules/slick-carousel/slick/slick.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./node_modules/slick-carousel/slick/slick-theme.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url(/_next/static/media/ajax-loader.0b80f665.gif) center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url(/_next/static/media/slick.25572f22.eot);
+    src: url(/_next/static/media/slick.25572f22.eot?#iefix) format('embedded-opentype'), url(/_next/static/media/slick.653a4cbb.woff) format('woff'), url(/_next/static/media/slick.6aa1ee46.ttf) format('truetype'), url(/_next/static/media/slick.f895cfdf.svg#slick) format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Testimonials/Slides.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.Slides_MainSlides__klKUl {
+    background: linear-gradient(90deg, #4772A1 16%, #292EA3 44%, #282DA3 74%);
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.Slides_slideInner__0ATDr {
+    position: relative;
+    padding: 20px 20px 50px;
+    background: linear-gradient(90deg, #2A839D 16%, #292EA3 44%, #080AA3 74%);
+    box-shadow: 0px 13px 33px 0px #00000040;
+}
+
+.Slides_slideInner__0ATDr>p {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    max-width: 90%;
+    margin: auto;
+}
+
+.Slides_slideInner__0ATDr>img{
+    position: absolute;
+    content: "";
+    margin: auto;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+}
+
+.Slides_slideInner__0ATDr>p>img:first-child {
+    margin-left: -15px;
+}
+
+.Slides_slideInner__0ATDr>p>img:last-child {
+    margin-left: auto;
+    margin-right: -15px;
+}
+
+.Slides_rating__D7C2N{
+    padding: 50px;
+    text-align: center;
+}
+
+.Slides_rating__D7C2N img{
+    margin: auto;
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Testimonials/Testimonials.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+.Testimonials_Testimonials__shgfK {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    line-height: 52px;
+    font-size: 40px;
+}
+
+@media(max-width:768px) {
+    .Testimonials_Testimonials__shgfK {
+        line-height: 1;
+        font-size: 20px;
+    }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/FeatureTable/FeatureTable.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+.FeatureTable_searchBtn__g4orM {
+    border: 1px solid #5C96CF;
+    background: linear-gradient(90deg, rgba(125, 227, 250, 1) 16%, rgba(89, 146, 252, 1) 44%, rgba(51, 59, 255, 1) 74%);
+    padding: 8px 30px;
+    color: #fff;
+    border-radius: 8px;
+}

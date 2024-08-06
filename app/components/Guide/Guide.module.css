@@ -1,0 +1,21 @@
+.Guideheading {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    line-height: 52px;
+    font-size: 40px;
+}
+
+@media(max-width:991px) {
+    .Guideheading {
+        line-height: 1;
+        font-size: 30px;
+    }
+}
+
+@media(max-width:768px) {
+    .Guideheading {
+        line-height: 1;
+        font-size: 20px;
+    }
+}

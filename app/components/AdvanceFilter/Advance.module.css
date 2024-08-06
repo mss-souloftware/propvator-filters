@@ -1,0 +1,11 @@
+.filterMain {
+    margin-top: -350px;
+}
+
+
+@media(max-width:991px) {
+    .filterMain {
+        margin-top: 0px;
+        padding: 0 12px;
+    }
+}

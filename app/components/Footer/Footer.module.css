@@ -1,0 +1,10 @@
+.gradientHDNG {
+    background: linear-gradient(135deg, #7DE3FA 16%, #333BFF 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #333BFF;
+    margin-bottom: 20px;
+}

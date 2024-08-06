@@ -1,0 +1,62 @@
+.newsletterWrapper {
+    margin-top: 50px;
+    padding: 50px 30px;
+    border-radius: 8px;
+    background: rgb(125, 227, 250);
+    background: linear-gradient(180deg, #333aff27 16%, #333aff1d 44%, #333aff0b 74%);
+}
+
+.Newsheading {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    line-height: 52px;
+    font-size: 40px;
+}
+
+.newsletterWrapper input {
+    background: #212460;
+    color: #fff;
+    padding: 15px;
+    width: 85%;
+    border-radius: 50px;
+}
+
+.newsletterWrapper input:focus {
+    outline: none;
+}
+
+.newsletterWrapper input::placeholder {
+    color: #fff;
+}
+
+.newsletterWrapper button {
+    width: 15%;
+    background: linear-gradient(180deg, rgb(125, 227, 250) 16%, rgb(89, 146, 252) 44%, rgb(51, 59, 255) 74%);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+    margin-left: -30px;
+}
+
+@media(max-width:1024px) {
+    .newsletterWrapper input {
+        width: 70%;
+    }
+
+    .newsletterWrapper button {
+        width: 30%;
+    }
+}
+
+@media(max-width:600px) {
+    .newsletterWrapper input {
+        width: 100%;
+    }
+
+    .newsletterWrapper button {
+        width: 100%;
+        margin-left: -0px;
+        margin-top: 15px;
+    }
+}
