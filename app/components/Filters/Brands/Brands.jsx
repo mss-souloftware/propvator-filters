@@ -19,7 +19,7 @@ export default function Brands() {
             <div className="flex flex-wrap gap-3  mt-10">
                 {brand.map((item, index) => {
                     return (
-                        <BrandSelector key={index} brandName={item.name} brand={item.brand} logo="/Images/brands/brand1.svg" />
+                        <BrandSelector filterType="brands" key={index} brandName={item.name} brand={item.brand} logo="/Images/brands/brand1.svg" />
                     );
                 })}
             </div>

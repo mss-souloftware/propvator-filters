@@ -9,11 +9,8 @@ import tableBodyData from '@/app/data/tableDataBody.json';
 
 export default function FeatureTable({ filter, data, setData }) {
    
-
     const hasTrueValue = (filter) => {
-        // Loop through the outer object values
         return Object.values(filter).some(category =>
-            // Loop through the nested objects to check for any true value
             Object.values(category).some(value => value === true)
         );
     };
@@ -32,14 +29,14 @@ export default function FeatureTable({ filter, data, setData }) {
                     }
                     return true;
                 });
-                // let filteredData = tableBodyData.filter(item => {
-                //     for (const brand in filter.brands) {
-                //         if (filter.brands[brand] && item.firm.toLowerCase() === brand) {
-                //             return true;
-                //         }
-                //     }
-                //     return false;
-                // 
+                filteredData = tableBodyData.filter(item => {
+                    for (const brand in filter.brands) {
+                        if (filter.brands[brand] && item.firm.toLowerCase() === brand) {
+                            return true;
+                        }
+                    }
+                    return false;
+                });
 
                 // console.log("filteredData", filteredData)
 
@@ -64,11 +61,14 @@ export default function FeatureTable({ filter, data, setData }) {
                 
 
                 // // Apply countries filter
-                // filteredData = tableBodyData.filter(item => {
-                //     return Object.keys(filter.countries).every(key => {
-                //         return filter.countries[key] === false || item.countries[key] === filter.countries[key];
-                //     });
-                // });
+                filteredData = tableBodyData.filter(item => {
+                    for (const key in filter.countries) {
+                        if (filter.countries[key] && item.filterType.countries[key] !== filter.countries[key]) {
+                            return false;
+                        }
+                    }
+                    return true;
+                });
 
                 // // Apply platforms filter
                 // filteredData = tableBodyData.filter(item => {
@@ -78,11 +78,14 @@ export default function FeatureTable({ filter, data, setData }) {
                 // });
 
                 // // Apply broker filter
-                // filteredData = tableBodyData.filter(item => {
-                //     return Object.keys(filter.broker).every(key => {
-                //         return filter.broker[key] === false || item.broker[key] === filter.broker[key];
-                //     });
-                // });
+                filteredData = tableBodyData.filter(item => {
+                    for (const key in filter.broker) {
+                        if (filter.broker[key] && item.filterType.broker[key] !== filter.broker[key]) {
+                            return false;
+                        }
+                    }
+                    return true;
+                });
 
                 // // Apply assetType filter
                 // filteredData = tableBodyData.filter(item => {
