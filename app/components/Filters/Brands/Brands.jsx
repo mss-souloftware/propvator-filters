@@ -3,7 +3,7 @@ import styles from "./Brands.module.css";
 import BrandSelector from "./BrandSelector";
 import brand from '@/app/data/brand.json';
 
-export default function Brands() {
+export default function Brands({filter, setfilter}) {
     return (
         <>
             <div className={`${styles.brandBox} flex flex-wrap justify-center md:justify-between items-center`}>
@@ -19,7 +19,7 @@ export default function Brands() {
             <div className="flex flex-wrap gap-3  mt-10">
                 {brand.map((item, index) => {
                     return (
-                        <BrandSelector filterType="brands" key={index} brandName={item.name} brand={item.brand} logo="/Images/brands/brand1.svg" />
+                        <BrandSelector filter={filter} setfilter={setfilter} filterType="brands" key={index} brandName={item.name} logo="/Images/brands/brand1.svg" />
                     );
                 })}
             </div>

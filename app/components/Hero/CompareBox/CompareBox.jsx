@@ -17,12 +17,12 @@ export default function CompareBox({ filter, setfilter }) {
       </div>
       <p>Select your account size</p>
       <div className={`flex gap-3 flex-wrap ${styles.slectionWrapper}`}>
-        <BTNClicks filter={filter} setfilter={setfilter} filterType="sizeType" title="5" />
-        <BTNClicks filter={filter} setfilter={setfilter} filterType="sizeType" title="10" />
-        <BTNClicks filter={filter} setfilter={setfilter} filterType="sizeType" title="25" />
-        <BTNClicks filter={filter} setfilter={setfilter} filterType="sizeType" title="50" />
-        <BTNClicks filter={filter} setfilter={setfilter} filterType="sizeType" title="100" />
-        <BTNClicks filter={filter} setfilter={setfilter} filterType="sizeType" title="200" />
+        <BTNClicks filter={filter} setfilter={setfilter} filterType="sizeType" title="5" tempTitle="5k" />
+        <BTNClicks filter={filter} setfilter={setfilter} filterType="sizeType" title="10" tempTitle="10k" />
+        <BTNClicks filter={filter} setfilter={setfilter} filterType="sizeType" title="25" tempTitle="25k" />
+        <BTNClicks filter={filter} setfilter={setfilter} filterType="sizeType" title="50" tempTitle="50k" />
+        <BTNClicks filter={filter} setfilter={setfilter} filterType="sizeType" title="100" tempTitle="100k" />
+        <BTNClicks filter={filter} setfilter={setfilter} filterType="sizeType" title="200" tempTitle="200k" />
       </div>
       <p>Select number of step</p>
       <div className={`flex gap-3 flex-wrap ${styles.slectionWrapper}`}>

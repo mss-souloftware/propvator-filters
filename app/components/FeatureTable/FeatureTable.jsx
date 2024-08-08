@@ -29,28 +29,26 @@ export default function FeatureTable({ filter, data, setData }) {
                     }
                     return true;
                 });
-                filteredData = tableBodyData.filter(item => {
-                    for (const brand in filter.brands) {
-                        if (filter.brands[brand] && item.firm.toLowerCase() === brand) {
-                            return true;
-                        }
-                    }
-                    return false;
+
+
+                // Apply brand filter
+                filteredData = filteredData.filter(item => {
+                    const isAnySizeSelected = Object.values(filter.brands).some(value => value);
+                    if (!isAnySizeSelected) return true;
+                    return filter.brands[item.firm.toLowerCase()];
                 });
 
                 // console.log("filteredData", filteredData)
 
                 // Apply sizeType filter
-                filteredData = tableBodyData.filter(item => {
+                filteredData = filteredData.filter(item => {
                     const isAnySizeSelected = Object.values(filter.sizeType).some(value => value);
                     if (!isAnySizeSelected) return true;
                     return filter.sizeType[item.size];
                 });
-                
 
-
-                // // Apply accountTypes filter
-                filteredData = tableBodyData.filter(item => {
+                // Apply accountTypes filter
+                filteredData = filteredData.filter(item => {
                     for (const key in filter.accountTypes) {
                         if (filter.accountTypes[key] && item.filterType.accountTypes[key] !== filter.accountTypes[key]) {
                             return false;
@@ -61,7 +59,7 @@ export default function FeatureTable({ filter, data, setData }) {
                 
 
                 // // Apply countries filter
-                filteredData = tableBodyData.filter(item => {
+                filteredData = filteredData.filter(item => {
                     for (const key in filter.countries) {
                         if (filter.countries[key] && item.filterType.countries[key] !== filter.countries[key]) {
                             return false;
@@ -71,14 +69,17 @@ export default function FeatureTable({ filter, data, setData }) {
                 });
 
                 // // Apply platforms filter
-                // filteredData = tableBodyData.filter(item => {
-                //     return Object.keys(filter.platforms).every(key => {
-                //         return filter.platforms[key] === false || item.platforms[key] === filter.platforms[key];
-                //     });
-                // });
+                filteredData = filteredData.filter(item => {
+                    for (const key in filter.platforms) {
+                        if (filter.platforms[key] && item.filterType.platforms[key] !== filter.platforms[key]) {
+                            return false;
+                        }
+                    }
+                    return true;
+                })
 
                 // // Apply broker filter
-                filteredData = tableBodyData.filter(item => {
+                filteredData = filteredData.filter(item => {
                     for (const key in filter.broker) {
                         if (filter.broker[key] && item.filterType.broker[key] !== filter.broker[key]) {
                             return false;
@@ -87,12 +88,6 @@ export default function FeatureTable({ filter, data, setData }) {
                     return true;
                 });
 
-                // // Apply assetType filter
-                // filteredData = tableBodyData.filter(item => {
-                //     return Object.keys(filter.assetType).every(key => {
-                //         return filter.assetType[key] === false || item.assetType[key] === filter.assetType[key];
-                //     });
-                // });
                 setData(filteredData);
             }
 
