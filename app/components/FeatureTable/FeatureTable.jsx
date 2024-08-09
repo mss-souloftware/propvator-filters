@@ -10,14 +10,27 @@ import tableBodyData from '@/app/data/tableDataBody.json';
 export default function FeatureTable({ filter, data, setData }) {
    
     const hasTrueValue = (filter) => {
-        return Object.values(filter).some(category =>
-            Object.values(category).some(value => value === true)
-        );
-    };
+        return Object.values(filter).some(category => {
+            if (typeof category === 'object' && !Array.isArray(category)) {
+                return Object.values(category).some(value => {
+                    if (typeof value === 'boolean') {
+                        return value === true;
+                    } else if (Array.isArray(value)) {
+                        // Check if the array values are different from [0, 1000]
+                        return !(value[0] === 0 && value[1] === 1000);
+                    }
+                    return false;
+                });
+            }
+            return false;
+        });
+    };    
+    
 
     useEffect(() => {
+        console.log({"new": filter})
         const filterData = () => {
-            if (!hasTrueValue) {
+            if (!hasTrueValue(filter)) {
                 setData(tableBodyData);
             } else {
 
@@ -87,6 +100,12 @@ export default function FeatureTable({ filter, data, setData }) {
                     }
                     return true;
                 });
+
+                
+                filteredData = filteredData.filter(item => item.price >= filter.rangeSlider.price[0] && item.price <= filter.rangeSlider.price[1]);
+                filteredData = filteredData.filter(item => item.commission >= filter.rangeSlider.commission[0] && item.commission <= filter.rangeSlider.commission[1]);
+                filteredData = filteredData.filter(item => item.leverage >= filter.rangeSlider.leverage[0] && item.leverage <= filter.rangeSlider.leverage[1]);
+                filteredData = filteredData.filter(item => item.credits >= filter.rangeSlider.credits[0] && item.credits <= filter.rangeSlider.credits[1]);
 
                 setData(filteredData);
             }

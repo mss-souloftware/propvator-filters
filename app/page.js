@@ -92,13 +92,20 @@ export default function Home() {
       crypto: false,
       indices: false,
       Commodities: false
+    },
+    rangeSlider: {
+      price: [0, 1000],
+      commission: [0, 1000],
+      leverage: [0, 1000],
+      credits: [0, 1000],
+      // hasRangeSet: false 
     }
   });
   return (
     <NextUIProvider>
       <Header />
       <Hero filter={filter} setfilter={setfilter} />
-      <AdvanceFilter data={data} setData={setData} />
+      <AdvanceFilter filter={filter} setfilter={setfilter} data={data} setData={setData} />
       <FeatureTable data={data} setData={setData} filter={filter} setfilter={setfilter} />
       <Guide />
       <Testimonials />

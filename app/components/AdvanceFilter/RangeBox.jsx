@@ -2,29 +2,49 @@
 import React, { useState } from 'react';
 import { Slider } from "@nextui-org/react";
 import styles from './RangeBox.module.css';
-import tableBodyData from '@/app/data/tableDataBody.json';
 
-
-export default function RangeBox({ data, setData, dataTpye }) {
-  const [value, setValue] = useState([100, 700]);
-
+export default function RangeBox({ data, setData, dataTpye, filter, setfilter }) {
   const handleRangeChangeHandler = (val) => {
-    setValue(val)
-    const updatedData = tableBodyData.filter(i => i[dataTpye] > value[0] && i[dataTpye] < value[1])
-    setData(updatedData)
+    const nextFilterState = {
+      ...filter,
+      rangeSlider: {
+        ...filter.rangeSlider,
+        [dataTpye]: val
+      }
+    };
+  
+    setfilter(nextFilterState);
   }
+  
 
   const handleMinChange = (e) => {
     const newMin = parseInt(e.target.value, 10);
-    if (newMin <= value[1] && newMin >= 0) {
-      setValue([newMin, value[1]]);
+    if (newMin <= filter.rangeSlider[dataTpye][1] && newMin >= 0) {
+      const nextFilterState = {
+        ...filter,
+        rangeSlider: {
+            ...filter.rangeSlider,
+            [dataTpye]: [newMin, filter.rangeSlider[dataTpye][1]]
+        }
+      };
+
+      setfilter(nextFilterState);
+
     }
   };
 
   const handleMaxChange = (e) => {
     const newMax = parseInt(e.target.value, 10);
-    if (newMax >= value[0] && newMax <= 1000) {
-      setValue([value[0], newMax]);
+    if (newMax >= filter.rangeSlider[dataTpye][0] && newMax <= 1000) {
+      const nextFilterState = {
+        ...filter,
+        rangeSlider: {
+            ...filter.rangeSlider,
+            [dataTpye]: [filter.rangeSlider[dataTpye][0], newMax]
+        }
+      };
+
+      setfilter(nextFilterState);
     }
   };
 
@@ -37,7 +57,7 @@ export default function RangeBox({ data, setData, dataTpye }) {
             type="number"
             name="maxPrice"
             id="maxPrice"
-            value={value[1]}
+            value={filter.rangeSlider[dataTpye][1]}
             onChange={handleMaxChange}
             placeholder='400'
           />
@@ -48,7 +68,7 @@ export default function RangeBox({ data, setData, dataTpye }) {
             type="number"
             name="minPrice"
             id="minPrice"
-            value={value[0]}
+            value={filter.rangeSlider[dataTpye][0]}
             onChange={handleMinChange}
             placeholder='34'
           />
@@ -61,7 +81,7 @@ export default function RangeBox({ data, setData, dataTpye }) {
           orientation="vertical"
           maxValue={1000}
           minValue={0}
-          value={value}
+          value={filter.rangeSlider[dataTpye]}
           onChange={handleRangeChangeHandler}
           className="max-w-md"
         />
